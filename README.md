@@ -174,5 +174,34 @@ class Solution(object):
         smallestpositive = 1
         while smallestpositive in numsset :
             smallestpositive += 1
-        return smallestpositive        
-                
+        return smallestpositive 
+
+        problem 4
+class Solution:
+    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+        arr=sorted(nums1+nums2)
+        n= len(arr)
+        if(n%2==0):
+            mid1=arr[n//2-1]
+            mid2=arr[n//2]
+            return(mid1+mid2)/2
+        else:
+            return(arr[n//2])
+        
+        return
+    problem 7 
+class Solution(object):
+    def reverse(self, x):
+        """
+        :type x: int
+        :rtype: int
+        """
+        
+        sign = -1 if x < 0 else 1
+        x *= sign
+        reversed_num = int(str(x)[::-1])
+        result = sign * reversed_num
+        if result < -2**31 or result > 2**31 - 1:
+           return 0
+        return result
+        
