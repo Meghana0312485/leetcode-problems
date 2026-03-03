@@ -205,6 +205,7 @@ class Solution(object):
         if result < -2**31 or result > 2**31 - 1:
            return 0
         return result
+        
     problem 268 
   class Solution(object):
     def findMissingElements(self, nums):
