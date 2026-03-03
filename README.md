@@ -215,5 +215,18 @@ class Solution(object):
         """
         n=len(nums)
         return n*(n+1)//2-sum(nums)
-        
+
+problems 3731
+   class Solution(object):
+    def findMissingElements(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        res=[]
+        nums.sort()
+        for i in range(nums[0],nums[-1]):
+            if i not in nums:
+                res.append(i)
+        return res     
         
