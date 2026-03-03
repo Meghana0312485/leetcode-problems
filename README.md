@@ -143,7 +143,8 @@ class Solution(object):
                     left = right
 
         return result
-                   problem 42
+        
+        problem 42
 
 class Solution:
     def trap(self, height: List[int]) -> int:
