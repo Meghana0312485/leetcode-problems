@@ -228,5 +228,33 @@ problems 3731
         for i in range(nums[0],nums[-1]):
             if i not in nums:
                 res.append(i)
-        return res     
+        return res   
+        
+problem 58
+class Solution(object):
+    def lengthOfLastWord(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        words = s.split()
+        return len(words[-1]) if words else 0
+
+problem number 78
+class Solution(object):
+    def subsets(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        res=[]
+        n=len(nums)
+        for i in range (1<<n):
+            s=[]
+            for j in range (n):
+                if i&(1<<j):
+                    s.append(nums[j])
+            res.append(s)
+        return res
+        
         
