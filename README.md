@@ -257,4 +257,84 @@ class Solution(object):
             res.append(s)
         return res
         
+problem number 76
+class Solution(object):
+    def minWindow(self, s, t):
+        """
+        :type s: str
+        :type t: str
+        :rtype: str
+        """
+        
+        if not s or not t:
+            return ""
+
+        t_count = Counter(t)
+        required = len(t_count)
+        formed = 0
+
+        window_counts = {}
+        min_len = float('inf')
+        min_window = (0, 0)
+        left = 0
+
+        for right in range(len(s)):
+            character = s[right]
+            window_counts[character] = window_counts.get(character, 0) + 1
+
+            if character in t_count and window_counts[character] == t_count[character]:
+                formed += 1
+
+            while formed == required and left <= right:
+                character = s[left]
+                if right - left + 1 < min_len:
+                    min_len = right - left + 1
+                    min_window = (left, right)
+
+                window_counts[character] -= 1
+                if character in t_count and window_counts[character] < t_count[character]:
+                    formed -= 1
+                left += 1
+
+        left, right = min_window
+        return "" if min_len == float('inf') else s[left:right + 1]
+
+problem number 115
+class Solution(object):
+    def numDistinct(self, s, t):
+        """
+        :type s: str
+        :type t: str
+        :rtype: int
+        """
+        m, n = len(s), len(t)
+        dp = [[0] * (n + 1) for _ in range(m + 1)]
+        
+        
+        for i in range(m + 1):
+            dp[i][0] = 1
+        
+        
+        for i in range(1, m + 1):
+            for j in range(1, n + 1):
+                dp[i][j] = dp[i - 1][j]
+                if s[i - 1] == t[j - 1]:
+                    dp[i][j] += dp[i - 1][j - 1]
+        
+        return dp[m][n]
+
+problem number 179
+class Solution(object):
+    def largestNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: str
+        """
+        c=""
+        arr=nums[::-1]
+        for i in arr:
+            c=c+str(i)
+        return c
+
+
         
