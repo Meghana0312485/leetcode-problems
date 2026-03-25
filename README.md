@@ -1,3 +1,45 @@
+problem 6
+class Solution(object):
+    def convert(self, s, numRows):
+        """
+        :type s: str
+        :type numRows: int
+        :rtype: str
+        """
+        if numRows == 1 or numRows >= len(s):
+            return s
+    
+        rows = [""] * numRows
+        cur_row = 0
+        going_down = False
+    
+        for char in s:
+            rows[cur_row] += char
+        
+            if cur_row == 0 or cur_row == numRows - 1:
+                going_down = not going_down
+        
+            cur_row += 1 if going_down else -1
+    
+        return "".join(rows)
+        
+
+
+problem 53
+class Solution(object):
+    def maxSubArray(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        current = max_sum = nums[0]
+        for num in nums[1:]:
+            current = max(num, current + num)
+            max_sum = max(max_sum, current)
+    
+        return max_sum
+        
+
 problem 55
 class Solution(object):
     def canJump(self, nums):
