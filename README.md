@@ -1,3 +1,27 @@
+problem 152
+class Solution(object):
+    def maxProduct(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        n=len(nums)
+        maxpro=float('-inf')
+        for i in range(n):
+            for j in range(i,n):
+                current=1
+                for k in range (i,j+1):
+                    
+                    current*=nums[k]
+                    maxpro=max(maxpro,current)
+                    
+        return maxpro          
+        
+
+problem 918
+
+
+
 problem no 209
 class Solution(object):
     def minSubArrayLen(self, target, nums):
