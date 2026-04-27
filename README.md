@@ -1,3 +1,34 @@
+problem 1876
+class Solution(object):
+    def countGoodSubstrings(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        n = len(s)
+        ans = 0
+        k = 3
+        dict = {}
+        left = 0
+
+        for right in range(n):
+            
+            dict[s[right]] = dict.get(s[right], 0) + 1
+
+            # Shrink window if too big
+            if right - left + 1 > k:
+                dict[s[left]] -= 1
+                if dict[s[left]] == 0:
+                    del dict[s[left]]
+                left += 1
+
+
+            if right - left + 1 == k and len(dict) == k:
+                ans += 1
+
+        return ans
+        
+
 problem 152
 class Solution(object):
     def maxProduct(self, nums):
