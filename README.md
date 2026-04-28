@@ -1,3 +1,39 @@
+problem 2144
+class Solution(object):
+    def minimumCost(self, cost):
+        """
+        :type cost: List[int]
+        :rtype: int
+        """
+        cost.sort()
+        took=0
+        ans=0
+        for i in range (len(cost)-1,-1,-1):
+            if took==2:
+                took=0
+
+            else:
+                ans+=cost[i]
+                took+=1
+        return ans
+
+        
+problem 561
+class Solution(object):
+    def arrayPairSum(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        nums.sort()
+        ans=0
+        for i in range(0,len(nums),2):
+            ans+=nums[i]
+        return ans
+        
+        
+
+
 problem no 1984
 class Solution(object):
     def minimumDifference(self, nums, k):
