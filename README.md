@@ -1,3 +1,60 @@
+problem 106
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution(object):
+    def buildTree(self, inorder, postorder):
+        """
+        :type inorder: List[int]
+        :type postorder: List[int]
+        :rtype: Optional[TreeNode]
+        """
+        inorder_map={}
+        for i in range(len(inorder)):
+            inorder_map[inorder[i]]=i
+        self.post_index=len(postorder)-1
+        def helper(left, right ):
+            if left>right:
+                return None
+            root_val=postorder[self.post_index]
+            self.post_index-=1
+            root=TreeNode(root_val)
+            mid=inorder_map[root_val]
+            root.right=helper(mid+1,right)
+            root.left=helper(left,mid-1)
+            return root
+        return helper(0,len(inorder)-1)
+            
+        
+problem 236
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def lowestCommonAncestor(self, root, p, q):
+        """
+        :type root: TreeNode
+        :type p: TreeNode
+        :type q: TreeNode
+        :rtype: TreeNode
+        """
+        if not root or root == p or root == q:
+            return root
+            
+        left = self.lowestCommonAncestor(root.left, p, q)   
+        right = self.lowestCommonAncestor(root.right, p, q) 
+        
+        if left and right:
+            return root
+        return left if left else right
+
 problem 2144
 class Solution(object):
     def minimumCost(self, cost):
