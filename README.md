@@ -1,3 +1,51 @@
+problem 1004
+class Solution(object):
+    def longestOnes(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        n=len(nums)
+        l=0
+        temp=0
+        ans=0
+        for r in range(n):
+            if(nums[r]==0):
+                temp+=1
+            while(temp>k):
+                if(nums[l]==0):
+                    temp-=1
+                l+=1
+            ans=max(ans,r-l+1)
+        return (ans)
+
+
+problem 219
+class Solution(object):
+    def containsNearbyDuplicate(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: bool
+        """
+    
+        seen = set()
+        l = 0
+
+        for r in range(len(nums)):
+        
+            if r - l > k:
+                seen.remove(nums[l])
+                l += 1
+
+            
+            if nums[r] in seen:
+                return True
+
+            seen.add(nums[r])
+
+        return False
 problem 106
 # Definition for a binary tree node.
 # class TreeNode(object):
