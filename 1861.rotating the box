@@ -1,0 +1,25 @@
+class Solution(object):
+    def rotateTheBox(self, boxGrid):
+        """
+        :type boxGrid: List[List[str]]
+        :rtype: List[List[str]]
+        """
+        m, n = len(boxGrid), len(boxGrid[0])
+
+        
+        for r in range(m):
+            write = n - 1 
+            for c in range(n - 1, -1, -1):
+                if boxGrid[r][c] == '*':
+                    write = c - 1 
+                elif boxGrid[r][c] == '#':
+                    boxGrid[r][c] = '.'
+                    boxGrid[r][write] = '#'
+                    write -= 1
+                
+        rotated = [[''] * m for _ in range(n)]
+        for r in range(m):
+            for c in range(n):
+                rotated[c][m - 1 - r] = boxGrid[r][c]
+
+        return rotated
