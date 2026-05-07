@@ -1,0 +1,25 @@
+class Solution(object):
+    def totalFruit(self, fruits):
+        """
+        :type fruits: List[int]
+        :rtype: int
+        """
+        
+        count = {}
+        ans = 0
+        l = 0
+
+        for r in range(len(fruits)):
+            val = fruits[r]
+            count[val] = count.get(val, 0) + 1
+
+            while len(count) > 2:
+                lval = fruits[l]
+                count[lval] -= 1 
+                if count[lval] == 0: 
+                    count.pop(lval) 
+                l += 1 
+
+            ans = max(ans, r - l + 1)
+
+        return ans
