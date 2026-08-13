@@ -1,0 +1,17 @@
+class Solution(object):
+    def smallestPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        dict={}
+        for ch in s:
+            dict[ch]=dict.get(ch,0)+1
+        left=""
+        mid=""
+        for ch in sorted(dict):
+            left+=ch*(dict[ch]//2)
+            if dict[ch]%2==1:
+                mid=ch
+        right=left[::-1]
+        return  left+mid+right      
