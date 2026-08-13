@@ -1,0 +1,20 @@
+class Solution(object):
+    def removeOuterParentheses(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        stack=""
+        count=0
+        for i in s:
+            if i=="(":
+                count+=1
+                if count>1:
+                    stack+=i
+            
+            elif i==")":
+                count-=1
+                if count>0:
+                     stack+=i
+        return stack
+        
