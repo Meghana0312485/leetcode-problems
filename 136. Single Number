@@ -1,0 +1,17 @@
+class Solution(object):
+    def singleNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        feq={}
+        for num in nums:
+            if num in feq:
+                feq[num]+=1
+            else:
+                feq[num]=1
+        for num in feq:
+           if feq[num]==1:
+              return num
+
+        
