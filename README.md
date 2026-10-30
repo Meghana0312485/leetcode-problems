@@ -720,3 +720,11 @@ ON e1.managerId = e2.id
 WHERE e1.salary > e2.salary;
 
         
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Database
+|  |
+| ------- |
+| [1407-top-travellers](https://github.com/Meghana0312485/leetcode-problems/tree/master/1407-top-travellers) |
+<!---LeetCode Topics End-->
