@@ -730,9 +730,14 @@ WHERE e1.salary > e2.salary;
 ## Linked List
 |  |
 | ------- |
+| [0876-middle-of-the-linked-list](https://github.com/Meghana0312485/leetcode-problems/tree/master/0876-middle-of-the-linked-list) |
 | [1290-convert-binary-number-in-a-linked-list-to-integer](https://github.com/Meghana0312485/leetcode-problems/tree/master/1290-convert-binary-number-in-a-linked-list-to-integer) |
 ## Math
 |  |
 | ------- |
 | [1290-convert-binary-number-in-a-linked-list-to-integer](https://github.com/Meghana0312485/leetcode-problems/tree/master/1290-convert-binary-number-in-a-linked-list-to-integer) |
+## Two Pointers
+|  |
+| ------- |
+| [0876-middle-of-the-linked-list](https://github.com/Meghana0312485/leetcode-problems/tree/master/0876-middle-of-the-linked-list) |
 <!---LeetCode Topics End-->
