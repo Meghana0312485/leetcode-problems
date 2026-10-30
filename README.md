@@ -727,4 +727,12 @@ WHERE e1.salary > e2.salary;
 |  |
 | ------- |
 | [1407-top-travellers](https://github.com/Meghana0312485/leetcode-problems/tree/master/1407-top-travellers) |
+## Linked List
+|  |
+| ------- |
+| [1290-convert-binary-number-in-a-linked-list-to-integer](https://github.com/Meghana0312485/leetcode-problems/tree/master/1290-convert-binary-number-in-a-linked-list-to-integer) |
+## Math
+|  |
+| ------- |
+| [1290-convert-binary-number-in-a-linked-list-to-integer](https://github.com/Meghana0312485/leetcode-problems/tree/master/1290-convert-binary-number-in-a-linked-list-to-integer) |
 <!---LeetCode Topics End-->
