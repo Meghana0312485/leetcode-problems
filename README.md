@@ -738,6 +738,7 @@ WHERE e1.salary > e2.salary;
 |  |
 | ------- |
 | [1290-convert-binary-number-in-a-linked-list-to-integer](https://github.com/Meghana0312485/leetcode-problems/tree/master/1290-convert-binary-number-in-a-linked-list-to-integer) |
+| [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/Meghana0312485/leetcode-problems/tree/master/3736-minimum-moves-to-equal-array-elements-iii) |
 ## Two Pointers
 |  |
 | ------- |
@@ -746,4 +747,8 @@ WHERE e1.salary > e2.salary;
 |  |
 | ------- |
 | [0203-remove-linked-list-elements](https://github.com/Meghana0312485/leetcode-problems/tree/master/0203-remove-linked-list-elements) |
+## Array
+|  |
+| ------- |
+| [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/Meghana0312485/leetcode-problems/tree/master/3736-minimum-moves-to-equal-array-elements-iii) |
 <!---LeetCode Topics End-->
