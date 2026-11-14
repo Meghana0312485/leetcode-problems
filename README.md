@@ -750,5 +750,14 @@ WHERE e1.salary > e2.salary;
 ## Array
 |  |
 | ------- |
+| [0059-spiral-matrix-ii](https://github.com/Meghana0312485/leetcode-problems/tree/master/0059-spiral-matrix-ii) |
 | [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/Meghana0312485/leetcode-problems/tree/master/3736-minimum-moves-to-equal-array-elements-iii) |
+## Matrix
+|  |
+| ------- |
+| [0059-spiral-matrix-ii](https://github.com/Meghana0312485/leetcode-problems/tree/master/0059-spiral-matrix-ii) |
+## Simulation
+|  |
+| ------- |
+| [0059-spiral-matrix-ii](https://github.com/Meghana0312485/leetcode-problems/tree/master/0059-spiral-matrix-ii) |
 <!---LeetCode Topics End-->
