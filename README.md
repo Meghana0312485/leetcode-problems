@@ -738,6 +738,7 @@ WHERE e1.salary > e2.salary;
 |  |
 | ------- |
 | [1290-convert-binary-number-in-a-linked-list-to-integer](https://github.com/Meghana0312485/leetcode-problems/tree/master/1290-convert-binary-number-in-a-linked-list-to-integer) |
+| [1524-number-of-sub-arrays-with-odd-sum](https://github.com/Meghana0312485/leetcode-problems/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/Meghana0312485/leetcode-problems/tree/master/3736-minimum-moves-to-equal-array-elements-iii) |
 ## Two Pointers
 |  |
@@ -751,6 +752,7 @@ WHERE e1.salary > e2.salary;
 |  |
 | ------- |
 | [0059-spiral-matrix-ii](https://github.com/Meghana0312485/leetcode-problems/tree/master/0059-spiral-matrix-ii) |
+| [1524-number-of-sub-arrays-with-odd-sum](https://github.com/Meghana0312485/leetcode-problems/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/Meghana0312485/leetcode-problems/tree/master/3736-minimum-moves-to-equal-array-elements-iii) |
 ## Matrix
 |  |
@@ -760,4 +762,12 @@ WHERE e1.salary > e2.salary;
 |  |
 | ------- |
 | [0059-spiral-matrix-ii](https://github.com/Meghana0312485/leetcode-problems/tree/master/0059-spiral-matrix-ii) |
+## Dynamic Programming
+|  |
+| ------- |
+| [1524-number-of-sub-arrays-with-odd-sum](https://github.com/Meghana0312485/leetcode-problems/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
+## Prefix Sum
+|  |
+| ------- |
+| [1524-number-of-sub-arrays-with-odd-sum](https://github.com/Meghana0312485/leetcode-problems/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 <!---LeetCode Topics End-->
