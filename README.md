@@ -762,6 +762,7 @@ WHERE e1.salary > e2.salary;
 |  |
 | ------- |
 | [0059-spiral-matrix-ii](https://github.com/Meghana0312485/leetcode-problems/tree/master/0059-spiral-matrix-ii) |
+| [2243-calculate-digit-sum-of-a-string](https://github.com/Meghana0312485/leetcode-problems/tree/master/2243-calculate-digit-sum-of-a-string) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -770,4 +771,8 @@ WHERE e1.salary > e2.salary;
 |  |
 | ------- |
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/Meghana0312485/leetcode-problems/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
+## String
+|  |
+| ------- |
+| [2243-calculate-digit-sum-of-a-string](https://github.com/Meghana0312485/leetcode-problems/tree/master/2243-calculate-digit-sum-of-a-string) |
 <!---LeetCode Topics End-->
